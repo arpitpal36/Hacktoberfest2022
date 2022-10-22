@@ -1,0 +1,24 @@
+/*arpit122*/
+#include <bits/stdc++.h>
+using namespace std;
+
+void count(string &str)
+{
+   map<char, int> mp;
+   for (auto character : str)
+   {
+      mp[character]++;
+   }
+   for (auto it : mp)
+   {
+      cout << it.first << " " << it.second << endl;
+   }
+}
+
+int main()
+{
+   string str;
+   getline(cin, str);
+   count(str);
+   return 0;
+}
